@@ -1,0 +1,11 @@
+<div class="container-fluid">
+    <!--Botones-->
+    <div class="row m-3 my-5" *ngFor="let zona of zonas">
+        <button class="btn buttons rounded-10 fw-bold text-light mw-10 text-uppercase" type="button" data-bs-toggle="offcanvas" [attr.data-bs-target]="'#'+zona.id" aria-controls="offcanvasRight1">{{zona.name}}</button>
+    </div>
+
+    <!--Off-canvas-->
+    <ng-container *ngFor="let zona of zonas">
+        <app-off-canvas [zona]="zona"></app-off-canvas>
+    </ng-container>  
+</div>

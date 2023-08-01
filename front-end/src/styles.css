@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;1,100&family=Roboto:wght@100&display=swap');
+
+*{
+    font-family: 'Poppins';
+}
+
+.wCanva{
+    min-width: 75%;
+    max-width: 100%;
+}
+
+.map{
+    width:100%;
+    height:auto;
+}
+
+.buttons{
+    background-color: #E16F3C;
+}
