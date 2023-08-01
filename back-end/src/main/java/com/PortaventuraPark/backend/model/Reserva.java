@@ -7,19 +7,21 @@ import jakarta.persistence.Table;
 import lombok.Data;
 
 import java.time.LocalDate;
-import java.util.Date;
+import java.time.LocalTime;
 
 @Entity
 @Data
-@Table(name = "personas")
-public class Persona {
+@Table(name = "reserva")
+public class Reserva {
     @Id
     @Column(name="id")
     private int id;
-    @Column(name="nombre")
-    private String nombre;
-    @Column(name="dni")
-    private String dni;
-    @Column(name="dia")
-    private LocalDate dia;
+    @Column(name="estado")
+    private int estado;
+    @Column(name="id_persona")
+    private int persona;
+    @Column(name="id_atraccion")
+    private int atraccion;
+    @Column(name="hora")
+    private LocalTime hora;
 }
